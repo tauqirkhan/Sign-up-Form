@@ -16,47 +16,61 @@
             <img class="image" src="./images/bg.jpg" alt="image">
         </div>
         <div class="left-side">
-            <p>
-                This is not a real online servide! You know you need something<br>
-                like this in your lifr to help you realize your deepest dreams.<br>
-                Sign up <i>now</i> to get started.
-            </p>
-            <p>
-                 You <i>know</i> you want to.
-            </p>
-            <form>
+            <div class="padding">
                 <p>
+                    This is not a real online service! You know you need something
+                    like this in your life to help you realize your deepest dreams.<br>
+                    Sign up <i>now</i> to get started.
+                </p>
+                <br>
+                <p>
+                    You <i>know</i> you want to.
+                </p>
+                <br>
+                <br>
+                <br>
+            </div>
+            <div class="form">
+                <form>
+                    <p>
                     Let's do this!
-                </p>
-                <p>
-                    <label for="fname">FIRST NAME</label>
-                    <input type="text" id="fname" name="userFirstName"/>
-                </p>
-                <p>
-                    <label for="lname">LAST NAME</label>
-                    <input type="text" id="lname" name="UserLastName"/>
-                </p>
-                <p>
-                    <label for="email">EMAIL</label>
-                    <input type="email" id="email" name="userEmail"/>
-                </p>
-                <p>
-                    <label for="number">PHONE NUMBER</label>
-                    <input type="tel" id="number" name="userPhoneNumber"/>
-                </p> 
-                <p>
-                    <label for="pwd">PASSWORD</label>
-                    <input type="password" id="pwd" name="userPassword" required/>
-                </p>
-                <p>
-                    <label for="cpwd">CONFIRM PASSWORD</label>
-                    <input type="password" id="cpwd" name="userConfirmPassword"/>
-                </p>                                                              
-            </form>
-            <button type="submit">Create Account</button>
-            <span>
-                Already have an account? <a class='logIn' href='#'>Log in</a>
-            </span>
+                    </p>
+                    <br>
+                        <div class="form-divs">
+                            <div>
+                                <label for="fname">FIRST NAME</label>
+                                <input type="text" id="fname" name="userFirstName"/>
+                            </div>
+                            <div>
+                                <label for="lname">LAST NAME</label>
+                                <input type="text" id="lname" name="UserLastName"/>
+                            </div>
+                            <div>
+                                <label for="email">EMAIL</label>
+                                <input type="email" id="email" name="userEmail"/>
+                            </div>
+                            <div>
+                                <label for="number">PHONE NUMBER</label>
+                                <input type="tel" id="number" name="userPhoneNumber"/>
+                            </div> 
+                            <div>
+                                <label for="pwd" class="error">PASSWORD</label>
+                                <input type="password" id="pwd" name="userPassword" required/>
+                            </div>
+                            <div>
+                                <label for="cpwd" class="error">CONFIRM PASSWORD</label>
+                                <input type="password" id="cpwd" name="userConfirmPassword" required/>
+                            </div> 
+                        </div>                                                             
+                    </form>
+                </div>
+                <div class="padding upside-padding">
+                    <button type="submit">Create Account</button>
+                    <span id="log"> 
+                        Already have an account? <a class='logIn' href='#'>Log in</a>
+                    </span>
+                </div>
+            </div>
         </div>
     </div>  
 </body>
