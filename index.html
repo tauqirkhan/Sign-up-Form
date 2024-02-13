@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href='style.css'>
+</head>
+<body>
+    <div id="container">
+        <div class="right-side">
+            <div class="bgtext">
+                <img class='logo' src="./images/odinLogo.png">
+                <span class="CustomFont">ODIN</span>
+            </div>
+            <img class="image" src="./images/bg.jpg" alt="image">
+        </div>
+        <div class="left-side">
+            <p>
+                This is not a real online servide! You know you need something<br>
+                like this in your lifr to help you realize your deepest dreams.<br>
+                Sign up <i>now</i> to get started.
+            </p>
+            <p>
+                 You <i>know</i> you want to.
+            </p>
+            <form>
+                <p>
+                    Let's do this!
+                </p>
+                <p>
+                    <label for="fname">FIRST NAME</label>
+                    <input type="text" id="fname" name="userFirstName"/>
+                </p>
+                <p>
+                    <label for="lname">LAST NAME</label>
+                    <input type="text" id="lname" name="UserLastName"/>
+                </p>
+                <p>
+                    <label for="email">EMAIL</label>
+                    <input type="email" id="email" name="userEmail"/>
+                </p>
+                <p>
+                    <label for="number">PHONE NUMBER</label>
+                    <input type="tel" id="number" name="userPhoneNumber"/>
+                </p> 
+                <p>
+                    <label for="pwd">PASSWORD</label>
+                    <input type="password" id="pwd" name="userPassword" required/>
+                </p>
+                <p>
+                    <label for="cpwd">CONFIRM PASSWORD</label>
+                    <input type="password" id="cpwd" name="userConfirmPassword"/>
+                </p>                                                              
+            </form>
+            <button type="submit">Create Account</button>
+            <span>
+                Already have an account? <a class='logIn' href='#'>Log in</a>
+            </span>
+        </div>
+    </div>  
+</body>
+</html>

@@ -1,0 +1,67 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/*  */
+
+
+@font-face {
+    font-family: 'CustomFont';
+    src: url('./font/Norse-Bold.otf') format('opentype');
+}
+
+#container{
+    height: 100vh;
+    display: flex;
+}
+
+.right-side{
+    flex: 1;
+    position: relative;
+    display: inline-block;
+}
+
+.image{
+    display: block;
+    width: 100%;
+    height: 100vh;
+}
+
+.left-side{
+    flex: 2;
+}
+
+.bgtext{
+    background-color: rgb(0, 0, 0 , 0.5);
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    top: 200px;
+}
+
+.logo{
+    align-self: center;
+    width: 30%;
+    height: 100px
+}
+
+.CustomFont {
+    font-family: 'CustomFont', monospace ;
+    font-size: 100px;
+    color: white;
+}
