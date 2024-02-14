@@ -57,6 +57,7 @@ p{
 }
 
 .left-side{
+    background-color: #E5E7EB;
     flex: 2;
 }
 .padding{
@@ -90,19 +91,24 @@ input{
     border-radius: 3px;
     width: 300px;
     height: 30px;
+    padding: 4px 8px;
+    font-size: 18px;
 }
 
 label{
     display: block;
 }
 
-input:required{
+input:invalid{
     border-color:red;
+    box-shadow: none;
 }
+
 form{
-    border: 1px solid red;
-    background-color: white;
+    border: none;
+    background-color: rgb(255, 255 ,255);
     padding: 3% 30% 3% 5%;
+    box-shadow: 10px 10px 5px #888888;
 }
 
 .upside-padding{
@@ -118,4 +124,33 @@ form{
 #log{
     display: block;
     margin-top: 2%;
+}
+
+.logIn {
+    color: #596D48;
+    text-decoration: none;
+    font-weight: 900;
+}
+
+input + span{
+    position: relative;
+}
+
+
+.password-mismatch {
+    border-color: red;
+    box-shadow: none;
+}
+
+.password-mismatch + span::after{
+    position: absolute;
+    top: 25px;
+    left: -300px;
+    content: '* Password do not match';
+    color: red;
+    font-size: 12px;
+}
+
+input:focus{
+    border-color: blue;
 }

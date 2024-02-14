@@ -56,10 +56,12 @@
                             <div>
                                 <label for="pwd" class="error">PASSWORD</label>
                                 <input type="password" id="pwd" name="userPassword" required/>
+                                <span></span>
                             </div>
                             <div>
                                 <label for="cpwd" class="error">CONFIRM PASSWORD</label>
                                 <input type="password" id="cpwd" name="userConfirmPassword" required/>
+                                <span></span>
                             </div> 
                         </div>                                                             
                     </form>
@@ -73,5 +75,20 @@
             </div>
         </div>
     </div>  
+    <script>
+        const pwd = document.querySelector('#pwd');
+        const cpwd = document.querySelector('#cpwd');
+
+        function checkPasswords() {
+            if (pwd.value !== cpwd.value) {
+                cpwd.classList.add('password-mismatch');
+            } else {
+                cpwd.classList.remove('password-mismatch');
+            }
+        }
+
+        pwd.addEventListener('input', checkPasswords);
+        cpwd.addEventListener('input', checkPasswords);
+    </script>
 </body>
 </html>
